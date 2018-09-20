@@ -1,0 +1,17 @@
+.hero {
+    height: 100vh;
+    min-height: 650px;
+    background-image: url(../../images/bg/bg-forest.jpg);
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-size: cover;
+    position: relative;
+
+    &__main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+}
