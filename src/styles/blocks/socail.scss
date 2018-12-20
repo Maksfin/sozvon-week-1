@@ -3,10 +3,13 @@
     margin: 0;
     padding: 0;
     display: flex;
-    &__item + &__item {
+
+    &__item+&__item {
         margin-left: 25px;
     }
+
     &__link {
         color: #ffffff;
+        font-size: 24px;
     }
 }

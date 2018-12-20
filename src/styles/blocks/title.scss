@@ -1,0 +1,17 @@
+.title {
+  position: relative;
+  font-size: 60px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 90px;
+    background-color: #ffffff;
+  }
+}
