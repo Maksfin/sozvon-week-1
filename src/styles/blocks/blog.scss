@@ -1,8 +1,10 @@
 .blog {
     &__main {
+        display: flex;
         position: relative;
-        padding-top: 60px;
+        padding: 80px 20px;
         background: #faf8f0;
+
         &:before {
             content: '';
             display: block;
@@ -14,10 +16,21 @@
             -webkit-transform: translateY(50%);
             transform: translateY(50%);
             background-image: linear-gradient(to top right, #faf8f0 0%, #faf8f0 50%, transparent calc(50% + 1px), transparent 100%),
-            linear-gradient(to top left, #faf8f0 0%, #faf8f0 50%, transparent calc(50% + 1px), transparent 100%);
+                linear-gradient(to top left, #faf8f0 0%, #faf8f0 50%, transparent calc(50% + 1px), transparent 100%);
             background-position: 0 bottom,
-            10% bottom;
+                10% bottom;
             background-repeat: no-repeat;
+        }
+
+        &-left {
+            width: 40%;
+            min-width: 450px;
+        }
+    }
+
+    &__article {
+        &+& {
+            margin-top: 50px
         }
     }
 }

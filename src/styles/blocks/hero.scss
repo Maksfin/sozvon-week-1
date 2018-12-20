@@ -3,7 +3,7 @@
     min-height: 650px;
     background-image: url(../../images/bg/bg-forest.jpg);
     background-repeat: no-repeat;
-    background-position: top center; 
+    background-position: top center;
     background-size: cover;
     position: relative;
 
@@ -13,5 +13,18 @@
         top: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
+        text-align: center;
+    }
+
+    &__photo {
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+
+    &__title {
+        margin-bottom: 20px;
     }
 }

@@ -1,0 +1,40 @@
+.btn-burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  transition: background-color 0.2s;
+  outline: none;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: inherit;
+      background-color: inherit;
+      transform-origin: 50% 50%;
+      transition: transform 0.2s, top 0.2s 0.2s;
+    }
+
+    &:before {
+      top: 7px;
+    }
+
+    &:after {
+      top: -7px;
+    }
+  }
+}
